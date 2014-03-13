@@ -3,11 +3,6 @@ language: ruby
 rvm:
   - 1.9.3
   - 2.0.0
-  - 2.1.0
-  - ruby-head
-  - jruby-19mode
-  - jruby-head
-  - rbx-2.2.5
 
 jdk:
   - oraclejdk7
@@ -20,8 +15,7 @@ env: CI="travis"
 script: bundle exec rake spec:ci
 
 notifications:
-  email: false
-  flowdock: 1da4416b8ff98d1880986472428b1b1b
+  email: manisha@shippable.com
 
 services:
   - mongodb
